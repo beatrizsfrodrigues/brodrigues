@@ -21,6 +21,7 @@ jobs:
       # Install dependencies
       - name: Install Node.js dependencies
         run: npm install
+        working-directory: ./tdw-beatriz
 
       # Run the linters using a lint action
       - name: Run linters
