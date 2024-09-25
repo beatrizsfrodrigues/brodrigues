@@ -28,5 +28,5 @@ jobs:
           prettier: true
 
       # If you need another lint action, keep this. Otherwise, remove it.
-      - name: Action Lint
-        uses: panda0603/lint-action@1.6.3
+      # - name: Action Lint
+      #   uses: panda0603/lint-action@1.6.3
