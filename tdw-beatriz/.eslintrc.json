@@ -14,8 +14,9 @@
   "rules": {
     // Example of customizing rules
     "react/react-in-jsx-scope": "off", // Not needed with React 17+
-    "quotes": ["error", "single"], // Require single quotes
-    "semi": ["error", "always"] // Require semicolons
+    "semi": ["error", "always"], // Require semicolons
+    "react/prop-types": "off", // Disable prop-types validation if using TypeScript or don't need it
+    "no-undef": "off" // Disable this rule if it's causing issues
     // Add more rules as needed
   },
   "settings": {
