@@ -23,10 +23,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd your-nextjs-project  # Navigate to your Next.js project folder
+          cd brodrigues # Navigate to your Next.js project folder
           npm install
 
       - name: Run Lint
         run: |
-          cd your-nextjs-project  # Navigate to your Next.js project folder
+          cd brodrigues  # Navigate to your Next.js project folder
           npm run lint
