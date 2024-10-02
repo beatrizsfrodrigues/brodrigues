@@ -1,31 +1,29 @@
 name: Lint
 
-on: push
+on:
+  push:
+    branches:
+      - main
+      - "refs/pull/*"
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  run-linters:
-    name: Run linters
+  lint:
     runs-on: ubuntu-latest
 
     steps:
-      # Check out the Git repository
-      - name: Check out Git repository
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      # Set up Node.js
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
-          node-version: "20.x"
+          node-version: "14" # Use your required Node.js version
 
-      # Install Node.js dependencies
-      - name: Install Node.js dependencies
-        run: npm install --force
+      - name: Install dependencies
+        run: npm install # or yarn install
 
-      # List installed packages for debugging
-      - name: List installed packages
-        run: npm list --depth=0
-
-      # Run ESLint directly instead of using lint-action
       - name: Run ESLint
-        run: npx eslint . # Run ESLint on your codebase
+        run: npm run lint
