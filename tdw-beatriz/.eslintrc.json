@@ -12,7 +12,7 @@
     }
   },
   "rules": {
-    // Example of customizing rules
+    // customizing rules
     "react/react-in-jsx-scope": "off", // Not needed with React 17+
     "semi": ["error", "always"], // Require semicolons
     "react/prop-types": "off", // Disable prop-types validation if using TypeScript or don't need it
