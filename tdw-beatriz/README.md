@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/brodrigues/badge.svg)](https://coveralls.io/github/brodrigues)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
