@@ -1,7 +1,12 @@
 {
   "compilerOptions": {
+    "target": "ESNext", // Set the target JavaScript version
+    "module": "commonjs", // Specify the module system
+    "baseUrl": "./", // Base URL to resolve non-relative module names
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"] // Define alias for importing modules from src
     }
-  }
+  },
+  "include": ["src/**/*"], // Include all files in the src folder
+  "exclude": ["node_modules", "**/*.spec.js"] // Exclude node_modules and test files
 }
