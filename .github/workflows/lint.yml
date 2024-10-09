@@ -31,5 +31,9 @@ jobs:
           cd tdw-beatriz  # Navigate to your Next.js project folder
           npm run lint
 
+      - name: Build Project
+        run: npm run build
+        if: success() && github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
+
       # - name: Coveralls GitHub Action
       #   uses: coverallsapp/github-action@v2.3.0
