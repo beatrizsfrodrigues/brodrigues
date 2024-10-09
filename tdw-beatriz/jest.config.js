@@ -11,6 +11,10 @@ module.exports = {
       },
     ],
   },
+  collectCoverage: true,
+  collectCoverageFrom: ["src/**/*.{js,jsx}"], // Include files to collect coverage from
+  coverageDirectory: "coverage", // Specify output directory for coverage
+  coverageReporters: ["json", "lcov", "text", "clover"], // Specify coverage report formats
   testEnvironment: "jsdom", // Use jsdom for React component testing
 };
 
